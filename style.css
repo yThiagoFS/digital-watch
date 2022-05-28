@@ -1,0 +1,76 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+
+        
+    
+}
+.body{
+    height:100vh;
+    background-image: url('');
+    background-size:100% 100%;
+    background-position:center center;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    column-gap:15px;
+    object-fit:cover;
+}
+.relogio{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:400px;
+    height:400px;
+    border-radius:50%;
+    border: 5px double #ff2998;
+    transition:.5s;
+    backdrop-filter:blur(5px);
+}
+.relogio div{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin: 0 15px;
+    color:white;
+
+}
+.relogio span{
+    font-size:45px;
+    font-weight:bolder;
+}
+.relogio p{
+    font-size:20px;
+    font-weight:bold;
+}
+.relogio:hover{
+    background-color:#ff2998;
+    box-shadow:0 0 150px  #ff2998;
+    cursor:pointer;
+}
+
+.buttonsAction{
+    display:flex;
+    flex-direction:column;
+    row-gap:10px;
+    align-items:center;
+}
+.buttonsAction>button{
+    background-color:transparent;
+    border:none;
+    font-size:35px;
+    cursor:pointer;
+}
+.fa-solid{
+    color:white;
+    pointer-events:none;
+}
+.active{
+    display:none;
+}
+
+
